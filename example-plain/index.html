@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <title>Plain JS Example</title>
+    <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="main-nav">
+            <a href="" class="active">Home</a>
+            <a href="todo/">Todos</a>
+        </nav>
+
+        <div class="home">
+            <h1>Plain JS</h1>
+            <p class="tagline">No Framework, No Library</p>
+
+            <div class="card">
+                <h2>What is this?</h2>
+                <p>
+                    This is the same todo app built with zero libraries - just plain
+                    vanilla JavaScript (written in TypeScript). No reactive primitives,
+                    no virtual DOM, just direct DOM manipulation.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Approach</h2>
+                <ul>
+                    <li><strong>Direct DOM</strong> - querySelector, createElement, addEventListener</li>
+                    <li><strong>Manual Updates</strong> - Explicit render calls when state changes</li>
+                    <li><strong>No Abstractions</strong> - What you write is what runs</li>
+                    <li><strong>Zero Dependencies</strong> - Nothing to install</li>
+                    <li><strong>Full Control</strong> - No magic, no surprises</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Trade-offs</h2>
+                <p>
+                    More verbose than reactive libraries, but also more explicit.
+                    You control exactly when and how the DOM updates. Good for
+                    learning, small apps, or when you need maximum control.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Try It</h2>
+                <p>
+                    Check out the <a href="todo/">Todo App</a> to see plain JS in action.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

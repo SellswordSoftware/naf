@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <include src="../src/partials/head.html"></include>
+        <link rel="stylesheet" href="../src/styles.css" />
+        <title>Todos - NAF-HTML Example</title>
+    </head>
+    <body>
+        <div class="container">
+            <include
+                src="../src/partials/nav.html"
+                todo-active="class='active'"
+            ></include>
+
+            <h1>Todos</h1>
+
+            <div class="card">
+                <form class="add-todo-form">
+                    <input
+                        type="text"
+                        name="text"
+                        placeholder="What needs to be done?"
+                    />
+                    <button type="submit" disabled>Add</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <div class="filters">
+                    <button class="secondary active" data-filter="all">
+                        All
+                    </button>
+                    <button class="secondary" data-filter="active">
+                        Active
+                    </button>
+                    <button class="secondary" data-filter="completed">
+                        Completed
+                    </button>
+                </div>
+
+                <div class="todo-list">
+                    <template id="todo-tpl">
+                        <div class="todo-item">
+                            <input type="checkbox" />
+                            <span class="todo-text"></span>
+                            <button class="danger">Delete</button>
+                        </div>
+                    </template>
+                    <!-- Initial todos render server-side for no-JS experience -->
+                    <div class="todo-item" data-id="1">
+                        <input type="checkbox" />
+                        <span class="todo-text">Learn NAF-HTML</span>
+                        <button class="danger">Delete</button>
+                    </div>
+                    <div class="todo-item done" data-id="2">
+                        <input type="checkbox" checked />
+                        <span class="todo-text">Read the docs</span>
+                        <button class="danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card stats">
+                <strong class="active-count">1</strong>
+                <span class="active-label">item remaining</span>
+            </div>
+        </div>
+
+        <script type="module" src="/src/ts/todo.ts"></script>
+    </body>
+</html>

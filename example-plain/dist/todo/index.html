@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <title>Todos - Plain JS Example</title>
+  <script type="module" crossorigin src="/assets/todo-C_zu5lqe.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/styles-DGh-jchZ.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="main-nav">
+            <a href="">Home</a>
+            <a href="todo/" class="active">Todos</a>
+        </nav>
+
+        <h1>Todos</h1>
+
+        <div class="card">
+            <form class="add-todo-form" id="add-form">
+                <input type="text" id="new-todo" placeholder="What needs to be done?">
+                <button type="submit" id="add-btn" disabled>Add</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <div class="filters" id="filters">
+                <button class="secondary active" data-filter="all">All</button>
+                <button class="secondary" data-filter="active">Active</button>
+                <button class="secondary" data-filter="completed">Completed</button>
+            </div>
+
+            <div class="todo-list" id="todo-list"></div>
+        </div>
+
+        <div class="card stats" id="stats">
+            <strong id="active-count">0</strong>
+            <span id="active-label">items remaining</span>
+        </div>
+    </div>
+
+</body>
+</html>

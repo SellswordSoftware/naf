@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<base href="/">
+
+        <title>NAF-HTML Example</title>
+      <script type="module" crossorigin src="/assets/main-Cl6Bz9cV.js"></script>
+      <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
+      <link rel="stylesheet" crossorigin href="/assets/main-Dlr-ZkaT.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="main-nav">
+    <a href="" {{home-active}}>Home</a>
+    <a href="todo/" {{todo-active}}>Todos</a>
+</nav>
+
+
+            <div class="home">
+                <h1>NAF-HTML</h1>
+                <p class="tagline">HTML-First Reactive Bindings</p>
+
+                <div class="card">
+                    <h2>What is NAF-HTML?</h2>
+                    <p>
+                        NAF-HTML is a ~1.1KB gzipped variant of NAF designed for
+                        progressive enhancement. Your HTML renders immediately,
+                        then JavaScript binds reactivity to existing elements.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>
+                            <strong>Reactive Signals</strong> - Fine-grained
+                            reactivity without a virtual DOM
+                        </li>
+                        <li>
+                            <strong>Computed Values</strong> - Automatic
+                            dependency tracking and caching
+                        </li>
+                        <li>
+                            <strong>Effects</strong> - Side effects that re-run
+                            when dependencies change
+                        </li>
+                        <li>
+                            <strong>HTML-First</strong> - Markup renders before
+                            JS loads
+                        </li>
+                        <li>
+                            <strong>Keyed Lists</strong> - Efficient
+                            <code>list()</code> with keyed updates
+                        </li>
+                        <li>
+                            <strong>Two-Way Binding</strong> -
+                            <code>model()</code> for form inputs
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h2>Philosophy</h2>
+                    <p>
+                        HTML-first, not JS-first. Your content is visible
+                        immediately without waiting for JavaScript. NAF-HTML
+                        enhances existing markup with reactivity rather than
+                        generating it from scratch.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h2>Try It</h2>
+                    <p>
+                        Check out the <a href="todo/">Todo App</a> to see
+                        NAF-HTML in action.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
